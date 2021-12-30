@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return(
     <>
       <Head>
+        
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <Component {...pageProps} />
