@@ -1,7 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 
-import NasaLogo from '../../assets/nasa-logo-font-white-70x20.png'
+import NasaLogo from '../../assets/nasa-logo-font-white-70x20.png';
+
+import Button from '../Button';
 
 const Header: React.FC = () => {
 
@@ -29,8 +31,8 @@ const Header: React.FC = () => {
             
 
             <div className="mr-2 lg:mr-10 flex flex-row">
-                <p onClick={goToGithubRepo} className="cursor-pointer hover:text-white text-slate-400 font-bold mx-2">Github</p>
-                <p onClick={goToNasaApi} className="cursor-pointer hover:text-white text-slate-400 font-bold mx-2">NASA API</p>
+                <Button type="outlined" onClick={goToGithubRepo}>Github</Button>
+                <Button type="fill" onClick={goToNasaApi}>NASA API</Button>
             </div>
            
         </header>
