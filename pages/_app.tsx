@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         
-        <script src="https://cdn.tailwindcss.com"></script>
+        {/*<script src="https://cdn.tailwindcss.com"></script>*/}
       </Head>
       <Component {...pageProps} />
     </>
