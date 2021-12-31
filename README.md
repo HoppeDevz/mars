@@ -8,6 +8,7 @@
  - Typescript
  - Next.JS 12
  - Tailwind.css
+ - FramerMotion
 
 <br></br>
 
@@ -20,7 +21,7 @@
  ```
     $ npm run start
  ```
- 
+
 <br></br>
 
 <img width="440px" src="https://i.imgur.com/sg0Djlh.png">
