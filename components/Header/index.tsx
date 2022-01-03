@@ -23,6 +23,7 @@ const Header: React.FC = () => {
             <div className="ml-10 lg:ml-40">
 
                 <Image 
+                    alt="Nasa Logo"
                     width="70"
                     height="20"
                     src={NasaLogo} 
@@ -31,8 +32,8 @@ const Header: React.FC = () => {
             
 
             <div className="mr-2 lg:mr-10 flex flex-row">
-                <Button type="outlined" onClick={goToGithubRepo}>Github</Button>
-                <Button type="fill" onClick={goToNasaApi}>NASA API</Button>
+                <Button label="Github" type="outlined" onClick={goToGithubRepo} />
+                <Button label="NASA API" type="fill" onClick={goToNasaApi} />
             </div>
            
         </header>

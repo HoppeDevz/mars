@@ -39,7 +39,7 @@ const Presentational: React.FC = () => {
 
             <div className="w-full 2xl:w-3/6">
 
-                <Image className="2xl:rounded-l-md" width="1920px" height="1080px" src={PresentationalImg} />
+                <Image alt="Mars Picture" className="2xl:rounded-l-md" width="1920px" height="1080px" src={PresentationalImg} />
             </div>
             
             

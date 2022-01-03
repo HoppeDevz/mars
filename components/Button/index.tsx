@@ -2,7 +2,7 @@ import React, { ReactNode, HTMLAttributes } from 'react';
 
 interface Props extends HTMLAttributes<HTMLButtonElement> {
 
-    children: ReactNode;
+    children?: ReactNode;
 
     label: string | number;
     type: 'outlined' | 'fill' | 'transparent';
