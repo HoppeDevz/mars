@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Presentational from '../components/Presentational';
 import WeatherSection from '../components/WeatherSection';
 import PicturesSection from '../components/PicturesSection';
+import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
       <Presentational />
       <WeatherSection />
       <PicturesSection />
+      <Footer />
     </>
   )
 }
