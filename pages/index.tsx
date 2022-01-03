@@ -3,6 +3,7 @@ import type { NextPage } from 'next';
 import Header from '../components/Header';
 import Presentational from '../components/Presentational';
 import WeatherSection from '../components/WeatherSection';
+import PicturesSection from '../components/PicturesSection';
 
 const Home: NextPage = () => {
   return (
@@ -10,6 +11,7 @@ const Home: NextPage = () => {
       <Header />
       <Presentational />
       <WeatherSection />
+      <PicturesSection />
     </>
   )
 }

@@ -1,6 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
-import type { WeatherResponse } from '../../@types/WeatherResponse';
 import axios from 'axios';
 import { NASA_API_KEY } from '../../settings/index.json';
 
