@@ -43,6 +43,7 @@ const PicturesSection: React.FC = () => {
             
             console.log(response.data.photos);
 
+            setCurrentPic(0);
             setPics(response.data.photos);
             
 
@@ -56,9 +57,7 @@ const PicturesSection: React.FC = () => {
     }, []);
 
     return(
-        <section className="w-full flex flex-col justify-center items-center">
-
-            <h1 className="font-bold text-white text-xl py-10">PICTURES</h1>
+        <section className="w-full flex flex-col justify-center items-center mt-10">
 
             <div className="w-4/5 flex flex-col justify-start items-start">
 
@@ -114,7 +113,7 @@ const PicturesSection: React.FC = () => {
                 </div>
 
                 <div className="w-full flex flex-row bg-black bottom-0 absolute">
-                    {pics.length > 0 && pics[currentPic].earth_date ?
+                    {pics.length > 0 && pics[currentPic]["earth_date"] ?
                     
                         <p className='text-gray-400 px-5'>{new Date(pics[currentPic].earth_date).toString()}</p>
                     :
@@ -122,7 +121,7 @@ const PicturesSection: React.FC = () => {
                     }
                 </div>
 
-                {pics.length > 0 && pics[currentPic].img_src ?
+                {pics.length > 0 && pics[currentPic]["img_src"] ?
                     
                     <img src={pics[currentPic].img_src} />
                 :

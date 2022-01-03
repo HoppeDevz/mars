@@ -11,8 +11,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
         const response = await axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?sol=1000&api_key=${NASA_API_KEY}${camera == "ALL" ? "" : `&camera=${camera}`}`)
 
-        console.log(response.data.photos)
-
         const filter = response.data.photos.filter((item: any) => item.img_src);
 
         res.status(200).json({photos: filter});
