@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion';
 
 import PresentationalImg from '../../assets/presentational-img-2.png'
 
 const Presentational: React.FC = () => {
-
+    
     return(
         <div className="w-100 flex flex-row flex-wrap justify-center md:justify-between items-center">
 

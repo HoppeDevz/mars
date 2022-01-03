@@ -5,22 +5,26 @@
 <br></br>
 
 🐪 Technologies
- - Typescript
- - Next.JS 12
- - Tailwind.css
- - FramerMotion
+
+- Typescript
+- Next.JS 12
+- Tailwind.css
+- FramerMotion
+- Jest and React Testing Library
 
 <br></br>
 
- 🐰 How to install 
- ```
-    $ npm install
- ```
+🐰 How to install
 
- 🐰 Run
- ```
-    $ npm run start
- ```
+```
+   $ npm install
+```
+
+🐰 Run
+
+```
+   $ npm run start
+```
 
 <br></br>
 

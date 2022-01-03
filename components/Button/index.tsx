@@ -4,8 +4,8 @@ interface Props extends HTMLAttributes<HTMLButtonElement> {
 
     children?: ReactNode;
 
-    label: string | number;
-    type: 'outlined' | 'fill' | 'transparent';
+    label?: string | number;
+    type?: 'outlined' | 'fill' | 'transparent';
 }
 
 const Button = ({type, label, ...props}: Props) => {
@@ -20,7 +20,7 @@ const Button = ({type, label, ...props}: Props) => {
             // DEFAULT STYLE = transparent
             `hover:text-white text-slate-400 font-bold mx-2 mx-2 px-2 py-1`
         }>
-            {label}
+            {label || "DefaultLabel"}
         </button>
     )
 }   

@@ -58,7 +58,7 @@ const WeatherSection: React.FC = () => {
                         className="w-1/3 flex flex-col justify-center items-center"
                     >
                         <p className="font-bold text-xl text-white">HIGH</p>
-                        <p className="font-regular text-gray-500">{max}F</p>
+                        <p className="font-regular text-gray-500">{max.toFixed(2)}F</p>
                     </motion.div>
                 </AnimatePresence>
 
@@ -71,7 +71,7 @@ const WeatherSection: React.FC = () => {
                         className="w-1/3 flex flex-col justify-center items-center"
                     >
                         <p className="font-bold text-xl text-white">LOW</p>
-                        <p className="font-regular text-gray-500">{min}F</p>
+                        <p className="font-regular text-gray-500">{min.toFixed(2)}F</p>
                     </motion.div>
                 </AnimatePresence>
             </div>
